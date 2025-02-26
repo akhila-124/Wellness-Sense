@@ -12,6 +12,7 @@ Wellness Sense is an AI-powered emotional health monitoring tool designed to det
 `OPENAI_API_KEY=your_openai_api_key`<br>
 `WS_HOST=127.0.0.1`<br>
 `WS_PORT=8005`
+4. Download haarcascade_frontalface_default.xml from `https://www.kaggle.com/datasets/timlukasblom/haarcascade-frontalface-defaultxml` and add it to root directory.
 
 ## Running the Application
 1. Start the backend server<br>
