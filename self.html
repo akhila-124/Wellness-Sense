@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="self.css">
+</head>
+<body class="container">
+    <h2>Further options :</h2>
+
+    <!-- Buttons for selecting activities or prescription -->
+    <div id="activities">
+        <button id="act" onclick="sendMessage_Act()">Self -Care Activities</button>
+        <button id="Prescription" onclick="sendMessage_presc()">Prescription</button>
+    </div>
+    
+     <!-- Dynamic heading section -->
+    <h3><div id="heading"></div></h3>
+    <br>
+
+      <!-- Description box where content will be updated -->
+    <div id="description" class="description-box">
+        Choose any one and Please wait...
+    </div>
+    
+    <!-- Button for read-aloud functionality -->
+    <div class="readalound">
+        <button onclick="readAloud()"><img src="read-aloud.png" alt="read_aloud_button"></button>
+    </div>
+    
+    <!-- Linking external JavaScript file -->
+    <script src="chatscript.js"></script>
+    
+</body>
+</html>

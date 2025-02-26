@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("background.png");
+    background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: 17px;
+    color: #333; 
+}
+
+button{
+    background-color: rgba(20, 198, 211, 0.892);
+    padding: 10px;
+    border-color: rgb(190, 228, 208);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #34a2ca;
+    cursor: pointer;
+}
+
+.description-box {
+    border: 2px solid black; 
+    border-radius: 8px;
+    padding: 20px; 
+    text-align:justify; 
+    max-width: 80%;
+    margin: 20px auto; 
+}
+
+.readalound img {
+    /* Set a fixed size for the image */
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>Medical Chatbot</title>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat header displaying the chatbot title -->
+        <div class="chat-header">
+            <h1>Wellness Chatbot</h1>
+        </div>
+
+        <!-- Chat body where messages will be displayed -->
+        <div class="chat-body" id="chat-body">
+            Hello! How can I assist you today?
+        </div>
+
+         <!-- Display area for additional results -->
+        <div class="Display" id="result">   
+        </div>
+
+         <!-- Container for chatbot response options -->
+        <div class="options" id="options-container">
+        </div>
+
+        <!-- Button for voice-based test -->
+        <div class="voice" id="voice_n">
+            <button onclick="sendMessage_voice()">Voice based Test</button>
+        </div>
+
+        <!-- User input field and send button -->
+        <div class="chat-input" id="ipms"> 
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <!-- Buttons for speech synthesis (text-to-speech) -->
+        <div class="speech" id="speak">
+            <button onclick="speakText('ipms')">Speak</button>
+            <button onclick="stopSpeech()">Stop</button>
+        </div>
+
+        <br><br><br><br>
+
+         <!-- Display area for percentage-based results -->
+        <div class="Display" id="percent">
+            
+        </div>
+
+        <br>
+
+        <!-- Next button for navigation to another page -->
+        <div class="options" id="nextoptions-container">
+            <button type="button" onclick="location.href='self.html'">Next</button>
+        </div>
+
+        <!-- Additional display area for chatbot output -->
+        <div class="Display" id="end-display">
+            
+        </div>
+
+
+    </div>
+
+     <!-- External JavaScript file for chatbot functionality -->
+    <script src="chatscript.js"></script>
+</body>
+</html>
